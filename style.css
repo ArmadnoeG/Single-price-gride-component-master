@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --color1: hsl(179, 62%, 43%);
+    --color2: hsl(71, 73%, 54%);
+    --color3:hsl(204, 43%, 93%);
+    --color4:hsl(218, 22%, 67%);
+    --padding: 1.9375rem 1.6875rem;
+}
+body {
+
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--color3);
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150vh;
+
+}
+.article {
+
+    width: 19.5rem;
+    overflow: hidden;
+    border-radius: 5px;
+
+    
+    
+}
+.principal {
+
+    background: #fff;
+    text-align: left;
+    
+
+    
+}
+.principal__title {
+
+    color: var(--color1);
+    padding: var(--padding);
+    font-size: 1.3em;
+    font-weight: 700;
+
+}
+.principal__h3 {
+
+    color: var(--color2);
+    padding: 0px 1.5rem 1.5rem ;
+    font-weight: 600;
+    font-size: 1em;
+}
+.principal__p {
+
+    line-height: 1.5625rem;
+    padding: 0px 1.5rem 2.5rem ;
+    color:var(--color4);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.secondary {
+
+    background-color: var(--color1);
+    color: #fff;
+    text-align: left;
+    border-bottom: 1px solid transparent;
+}
+.secondary__h2 {
+
+    padding: 1.625rem 1.5rem;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.secondary__price {
+
+    display: flex;
+    margin: 0px 1.5rem .75rem ;
+    align-items: center;
+}
+.secondary__price1 {
+
+   font-size: 2em; 
+   font-weight: 700;
+
+}
+.secondary__price2 {
+
+    font-size: .9em;
+    padding-left: .7rem;
+    color: var(--color3);
+    font-weight: 400;
+
+}
+.secondary__p{
+
+    padding: 0px 1.5rem 2.125rem ;
+    font-weight: 400;
+}
+.secondary__cta {
+
+    display: block;
+    border: none;
+    margin: 0 auto;
+    width: 16.5625rem;
+    height: 2.9375rem;
+    background-color: var(--color2);
+    color: #fff;
+    border-radius: .3125rem;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 1.5rem;
+}
+.third {
+
+    background: hsla(179, 62%, 43%, 0.822);
+        
+}
+.third__title {
+
+    padding: 1.625rem 1.5rem;
+    color: #fff;
+    font-weight: 700;
+
+}
+.third__p {
+
+    padding: 0px 6.25rem 1.5rem 1.5rem;
+    color: var(--color3);
+    line-height: 1.5625rem;
+    text-align:start;
+    font-size: 0.9em;    
+}
+@media screen and (min-width: 900px) {
+
+    .article {
+
+        width: 39.75rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .principal {
+
+        grid-column: 1/3;
+        
+    }
+
+}
+
+
